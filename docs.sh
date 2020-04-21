@@ -9,3 +9,7 @@ for notebook in $notebooks; do
 	jupyter nbconvert --to html --output-dir $folder $notebook
 
 done
+
+git add ./docs
+
+git commit -am "Update docs."
