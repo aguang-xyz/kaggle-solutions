@@ -1,10 +1,22 @@
 #!/bin/bash
 
+rm -rf docs
+
+mkdir -p ./docs
+
+echo "# Kaggle Solutions" >> ./docs/index.md
+
 for notebook in $(find . -not -path '*/\.*' -name '*.ipynb'); do
 
   folder=$(dirname ${notebook/\.\/solutions/docs})
 
-  echo $folder
+  display=${notebook/\.\/solutions\//}
+  display=${display/\.ipynb/}
+  
+  href=${notebook/\.\/solutions/kaggle-solutions}
+  href=${href/\.ipynb/}
+
+  echo " * [$display](https://aguang-xyz.github.io/${href})" >> ./docs/index.md
 
   mkdir -p $folder
 
