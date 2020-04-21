@@ -4,7 +4,7 @@ rm -rf docs
 
 mkdir -p ./docs
 
-echo "# Kaggle Solutions" >> ./docs/index.md
+echo "# Solutions" >> ./docs/index.md
 
 for notebook in $(find . -not -path '*/\.*' -name '*.ipynb'); do
 
