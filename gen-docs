@@ -4,6 +4,8 @@ rm -rf docs
 
 mkdir -p ./docs
 
+echo "theme: jekyll-theme-hacker" > ./docs/_config.yml
+
 echo "# Solutions" >> ./docs/index.md
 
 for notebook in $(find . -not -path '*/\.*' -name '*.ipynb'); do
