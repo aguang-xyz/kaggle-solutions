@@ -1,0 +1,32 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+
+  echo "Usage: $0 [project-name]"
+
+  exit 0
+fi
+
+if [ -d "./solutions/$1" ]; then
+
+  echo "Folder './solutions/$1' already exist."
+
+  exit 0
+fi
+
+if mkdir -p "./solutions/$1/dataset"; then
+
+  cd "./solutions/$1/dataset"
+
+  if ! kaggle competitions download -c $1; then
+
+    exit 0
+  fi
+
+  unzip *.zip
+
+  rm *.zip
+
+  cd ../..
+fi
+
