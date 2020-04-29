@@ -8,7 +8,7 @@ echo "theme: jekyll-theme-hacker" > ./docs/_config.yml
 
 echo "# Solutions" >> ./docs/index.md
 
-for notebook in $(find . -not -path '*/\.*' -name '*.ipynb'); do
+for notebook in $(find ./solutions -not -path '*/\.*' -name '*.ipynb'); do
 
   folder=$(dirname ${notebook/\.\/solutions/docs})
 
