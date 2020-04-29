@@ -1,5 +1,4 @@
 # Solutions
- * [./practices/torch/basics](https://aguang-xyz.github.io/./practices/torch/basics)
  * [titanic/solution](https://aguang-xyz.github.io/kaggle-solutions/titanic/solution)
  * [digital-recognizer/solution-sklearn](https://aguang-xyz.github.io/kaggle-solutions/digital-recognizer/solution-sklearn)
  * [digital-recognizer/solution-torch](https://aguang-xyz.github.io/kaggle-solutions/digital-recognizer/solution-torch)
