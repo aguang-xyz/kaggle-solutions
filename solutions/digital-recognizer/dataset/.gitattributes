@@ -1,0 +1,2 @@
+mnist/test.csv filter=lfs diff=lfs merge=lfs -text
+mnist/train.csv filter=lfs diff=lfs merge=lfs -text
