@@ -23,9 +23,11 @@ if mkdir -p "./solutions/$1/dataset"; then
     exit 0
   fi
 
-  unzip *.zip
+  zips=$(find ./ -name *.zip)
 
-  rm *.zip
+  unzip $zips
+
+  rm $zips
 
   cd ../..
 fi
